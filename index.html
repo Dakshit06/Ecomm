@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Modern Shopping Experience</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Import Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/banner.jpg');
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://via.placeholder.com/150x50?text=FASHION+STORE" alt="Fashion Store Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <div class="nav-icons d-flex align-items-center gap-4">
+                        <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                        <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                        <a href="#" class="nav-icon cart-icon position-relative">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 - Luxury Collection -->
+                    <div class="swiper-slide hero-slide" style="background-image: url('https://images.pexels.com/photos/1895015/pexels-photo-1895015.jpeg')">
+                        <div class="hero-content">
+                            <span class="hero-label">Luxury Collection</span>
+                            <h1>Premium Menswear</h1>
+                            <p>Discover our exclusive designs</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary">Shop Men</a>
+                                <a href="#collection" class="btn btn-outline-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Casual Collection -->
+                    <div class="swiper-slide hero-slide" style="background-image: url('https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg')">
+                        <div class="hero-content">
+                            <span class="hero-label">Casual Collection</span>
+                            <h1>Modern Menswear</h1>
+                            <p>Elevate your style with premium designs</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary">Shop Men</a>
+                                <a href="#collection" class="btn btn-outline-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Street Style -->
+                    <div class="swiper-slide hero-slide" style="background-image: url('https://images.pexels.com/photos/2896853/pexels-photo-2896853.jpeg')">
+                        <div class="hero-content">
+                            <span class="hero-label">Street Style</span>
+                            <h1>Urban Collection</h1>
+                            <p>Fashion that defines your personality</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary">Explore Now</a>
+                                <a href="#collection" class="btn btn-outline-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 - Formal Wear -->
+                    <div class="swiper-slide hero-slide" style="background-image: url('https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg')">
+                        <div class="hero-content">
+                            <span class="hero-label">Formal Wear</span>
+                            <h1>Business Collection</h1>
+                            <p>Discover our premium suits and formal wear</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                                <a href="#collection" class="btn btn-outline-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 - Special Offer -->
+                    <div class="swiper-slide hero-slide" style="background-image: url('https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg')">
+                        <div class="hero-content">
+                            <span class="hero-label special-offer">Special Offer</span>
+                            <h1>Summer Sale</h1>
+                            <p>Up to 50% off on selected items</p>
+                            <div class="hero-buttons">
+                                <a href="#shop" class="btn btn-primary">Shop Sale</a>
+                                <a href="#collection" class="btn btn-outline-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span>Scroll to Explore</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider Section -->
+        <section class="image-slider-section">
+            <div class="swiper image-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <img src="https://images.pexels.com/photos/2887766/pexels-photo-2887766.jpeg" alt="Formal Wear">
+                            <div class="slider-content">
+                                <h3>Formal Collection</h3>
+                                <p>Starting at $199.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <img src="https://images.pexels.com/photos/1760900/pexels-photo-1760900.jpeg" alt="Business Casual">
+                            <div class="slider-content">
+                                <h3>Business Casual</h3>
+                                <p>From $89.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <img src="https://images.pexels.com/photos/2955375/pexels-photo-2955375.jpeg" alt="Street Style">
+                            <div class="slider-content">
+                                <h3>Street Style</h3>
+                                <p>From $49.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <img src="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg" alt="Smart Casual">
+                            <div class="slider-content">
+                                <h3>Smart Casual</h3>
+                                <p>Must-have pieces</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <h2 class="section-title" data-aos="fade-up">Featured Products</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Discover our handpicked collection</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end" data-aos="fade-up" data-aos-delay="200">
+                        <button class="btn btn-outline-primary view-all">
+                            View All <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Product Cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="trending-section bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="trending-content p-4">
+                            <span class="badge bg-primary mb-3">New Arrival</span>
+                            <h2 class="mb-4">Premium Collection 2024</h2>
+                            <p class="mb-4">Discover our latest collection of premium menswear, crafted with the finest materials for the modern gentleman.</p>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                                <a href="#" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="trending-image">
+                            <img src="https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg" alt="Premium Collection" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Banner Section -->
+        <section class="collection-banner no-margin full-width">
+            <div class="container-fluid no-padding">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="banner-content-wrapper">
+                            <div class="banner-content p-5 p-lg-8">
+                                <span class="banner-label d-inline-block mb-4">Limited Time Offer</span>
+                                <h2 class="banner-title display-3 fw-bold mb-4">Summer Collection</h2>
+                                <p class="banner-subtitle fs-4 mb-5">Up to 50% off on selected items</p>
+                                <div class="banner-features mb-5">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <div class="feature-item">
+                                                <i class="fas fa-shipping-fast mb-3"></i>
+                                                <h5>Free Shipping</h5>
+                                                <p>On orders over $50</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="feature-item">
+                                                <i class="fas fa-undo mb-3"></i>
+                                                <h5>Easy Returns</h5>
+                                                <p>30-day return policy</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="feature-item">
+                                                <i class="fas fa-percent mb-3"></i>
+                                                <h5>Big Savings</h5>
+                                                <p>Up to 50% off</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner-buttons">
+                                    <a href="#" class="btn btn-primary btn-lg px-5 me-3">Shop Now</a>
+                                    <a href="#" class="btn btn-outline-dark btn-lg px-5">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 h-100">
+                        <div class="banner-image-wrapper">
+                            <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg" 
+                                 alt="Fashion Collection" class="banner-image">
+                            <div class="banner-overlay">
+                                <!-- Sale Badge with Animation -->
+                                <div class="sale-badge-container">
+                                    <div class="sale-badge">
+                                        <div class="sale-content">
+                                            <span class="sale-label">SUMMER SALE</span>
+                                            <span class="sale-text">50% OFF</span>
+                                            <span class="sale-timer" id="saleTimer">Ends in: 2d 15h 30m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Floating Product Images -->
+                                <div class="floating-images">
+                                    <!-- Fashion Image 1 -->
+                                    <div class="float-img-container img-1">
+                                        <img src="https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg" 
+                                             alt="Men's Fashion" class="float-img">
+                                        <div class="img-price">$89.99</div>
+                                    </div>
+                                    
+                                    <!-- Fashion Image 2 -->
+                                    <div class="float-img-container img-2">
+                                        <img src="https://images.pexels.com/photos/1760900/pexels-photo-1760900.jpeg" 
+                                             alt="Men's Style" class="float-img">
+                                        <div class="img-price">$69.99</div>
+                                    </div>
+                                    
+                                    <!-- Fashion Image 3 -->
+                                    <div class="float-img-container img-3">
+                                        <img src="https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg" 
+                                             alt="Accessories" class="float-img">
+                                        <div class="img-price">$29.99</div>
+                                    </div>
+                                </div>
+
+                                <!-- Decorative Elements -->
+                                <div class="decorative-elements">
+                                    <div class="circle-element"></div>
+                                    <div class="square-element"></div>
+                                    <div class="dots-element"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+            url('https://images.pexels.com/photos/2897531/pexels-photo-2897531.jpeg')">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Section -->
+        <section class="parallax-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg')">
+            <div class="parallax-content">
+                <h2>Style Meets Comfort</h2>
+                <p>Explore our exclusive collection</p>
+                <a href="#" class="btn btn-light btn-lg">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Featured Categories Section -->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="subtitle">Men's Collections</span>
+                    <h2 class="title">Shop By Category</h2>
+                    <p class="description">Discover our premium selection of menswear</p>
+                </div>
+                
+                <div class="category-grid">
+                    <!-- Category 1 - Formal -->
+                    <div class="category-item large" data-aos="fade-up">
+                        <div class="category-card">
+                            <img src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg" alt="Formal Wear">
+                            <div class="category-content">
+                                <h3>Formal Wear</h3>
+                                <p>Premium Suits & Blazers</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 2 - Casual -->
+                    <div class="category-item" data-aos="fade-up">
+                        <div class="category-card">
+                            <img src="https://images.pexels.com/photos/2896840/pexels-photo-2896840.jpeg" alt="Casual Wear">
+                            <div class="category-content">
+                                <h3>Casual Collection</h3>
+                                <p>Everyday Comfort</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 3 - Accessories -->
+                    <div class="category-item" data-aos="fade-up">
+                        <div class="category-card">
+                            <img src="https://images.pexels.com/photos/1450114/pexels-photo-1450114.jpeg" alt="Accessories">
+                            <div class="category-content">
+                                <h3>Accessories</h3>
+                                <p>Complete your look</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 4 - Footwear -->
+                    <div class="category-item" data-aos="fade-up">
+                        <div class="category-card">
+                            <img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg" alt="Footwear">
+                            <div class="category-content">
+                                <h3>Footwear</h3>
+                                <p>Premium Shoes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section mt-5">
+                    <div class="row g-4">
+                        <div class="col-md-3" data-aos="fade-up">
+                            <div class="feature-box">
+                                <i class="fas fa-truck"></i>
+                                <h4>Free Shipping</h4>
+                                <p>On orders over $50</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-box">
+                                <i class="fas fa-undo"></i>
+                                <h4>Easy Returns</h4>
+                                <p>30-day return policy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-box">
+                                <i class="fas fa-lock"></i>
+                                <h4>Secure Payment</h4>
+                                <p>100% secure checkout</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-box">
+                                <i class="fas fa-headset"></i>
+                                <h4>24/7 Support</h4>
+                                <p>Dedicated support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lookbook Section -->
+        <section class="lookbook-section">
+            <div class="container-fluid p-0">
+                <div class="lookbook-header text-center mb-5">
+                    <span class="lookbook-label">Trending Now</span>
+                    <h2>Men's Lookbook 2024</h2>
+                    <p>Get inspired by our latest men's collections and styling ideas</p>
+                </div>
+                
+                <div class="lookbook-grid">
+                    <!-- Main Image -->
+                    <div class="lookbook-item large">
+                        <img src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg" alt="Formal Collection">
+                        <div class="lookbook-content">
+                            <h3>Premium Collection</h3>
+                            <p>Elevate Your Style</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Grid Images -->
+                    <div class="lookbook-grid-small">
+                        <div class="lookbook-item">
+                            <img src="https://images.pexels.com/photos/2896840/pexels-photo-2896840.jpeg" alt="Casual Style">
+                        </div>
+                        <div class="lookbook-item">
+                            <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg" alt="Business Style">
+                        </div>
+                        <div class="lookbook-item">
+                            <img src="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg" alt="Smart Casual">
+                        </div>
+                        <div class="lookbook-item">
+                            <img src="https://images.pexels.com/photos/2955375/pexels-photo-2955375.jpeg" alt="Urban Style">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@fashionstore.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
